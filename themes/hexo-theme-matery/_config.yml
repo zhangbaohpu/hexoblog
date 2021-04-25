@@ -57,7 +57,7 @@ cover:
   showIndicators: true # 是否显示指示器. # Whether to display the indicators
   autoLoop: true # 是否自动轮播. Whether it is automatically rotated.
   duration: 120 # 切换延迟时间. Switching delay time.
-  intervalTime: 5000 # 自动切换下一张的间隔时间. Automatically switch the interval of the next one.
+  intervalTime: 8000 # 自动切换下一张的间隔时间. Automatically switch the interval of the next one.
   useConfig: false # 是否使用配置文件, 在 _data/covers.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
   # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.json 移动到 my-blog/source/_data/下修改配置即可
 
@@ -77,18 +77,18 @@ music:
     enable: true
     show: 听听音乐
   autoHide: true    # hide automaticaly
-  server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
+  server: tencent   #require	music platform: netease（网易云）, tencent, kugou, xiami, baidu
   type: playlist    #require song, playlist, album, search, artist
-  id: 503838841     #require	song id / playlist id / album id / search keyword
-  fixed: true       # 开启吸底模式
+  id: 4435254268     #require，503838841：网易云，4435254268：qq音乐	song id / playlist id / album id / search keyword
+  fixed: false       # 开启吸底模式
   autoplay: false   # 是否自动播放
   theme: '#42b983'
   loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
   order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
   preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-  listFolded: true  # 列表默认折叠
-  hideLrc: true     # 隐藏歌词
+  listFolded: false  # 列表默认折叠
+  hideLrc: false     # 隐藏歌词
 
 # Whether to display the videos.
 # 是否在首页显示视频.
@@ -376,7 +376,7 @@ verifyPassword:
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
 # 不蒜子(http://busuanzi.ibruce.info/) 网站统计
 busuanziStatistics:
-  enable: true
+  enable: false
   totalTraffic: true # 总访问量
   totalNumberOfvisitors: true # 总人次
 
@@ -548,6 +548,7 @@ subtitle:
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
   sub:
+    - 身体和灵魂，总要一个在路上
     - 从来没有真正的绝境, 只有心灵的迷途
     - Never really desperate, only the lost of the soul
 
